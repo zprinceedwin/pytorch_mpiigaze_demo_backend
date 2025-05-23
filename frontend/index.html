@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizSecure - AI-Powered Exam Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-blue-900 text-white min-h-screen">
+    <!-- Header -->
+    <nav class="bg-black bg-opacity-50 backdrop-blur-sm p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold">Q</span>
+                </div>
+                <h1 class="text-2xl font-bold">QuizSecure</h1>
+                <span class="bg-green-500 px-2 py-1 rounded-full text-xs">AI-POWERED</span>
+            </div>
+            <div class="flex space-x-4">
+                <button id="studentBtn" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">
+                    Student View
+                </button>
+                <button id="instructorBtn" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition">
+                    Instructor Dashboard
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+                AI-Powered Academic Integrity
+            </h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                QuizSecure uses state-of-the-art ETH-XGaze neural networks and behavioral analysis
+                to ensure fair online examinations while protecting student privacy.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-blue-400">85%+</div>
+                    <div class="text-sm text-gray-400">Detection Accuracy</div>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-green-400">4.7°</div>
+                    <div class="text-sm text-gray-400">Gaze Accuracy</div>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-purple-400">30fps</div>
+                    <div class="text-sm text-gray-400">Real-time Processing</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-gray-800 bg-opacity-50 rounded-xl p-6 backdrop-blur-sm">
+                <div class="w-12 h-12 bg-blue-500 rounded-lg mb-4 flex items-center justify-center">
+                    👁️
+                </div>
+                <h3 class="text-xl font-bold mb-3">Real-time Gaze Tracking</h3>
+                <p class="text-gray-300">
+                    ETH-XGaze neural networks provide precise gaze estimation with 4.7° angular accuracy
+                    for detecting attention patterns.
+                </p>
+            </div>
+
+            <div class="bg-gray-800 bg-opacity-50 rounded-xl p-6 backdrop-blur-sm">
+                <div class="w-12 h-12 bg-green-500 rounded-lg mb-4 flex items-center justify-center">
+                    🧠
+                </div>
+                <h3 class="text-xl font-bold mb-3">Behavioral Analysis</h3>
+                <p class="text-gray-300">
+                    Multi-layered AI pipeline combines rule-based detection with temporal pattern
+                    analysis to minimize false positives.
+                </p>
+            </div>
+
+            <div class="bg-gray-800 bg-opacity-50 rounded-xl p-6 backdrop-blur-sm">
+                <div class="w-12 h-12 bg-purple-500 rounded-lg mb-4 flex items-center justify-center">
+                    🔒
+                </div>
+                <h3 class="text-xl font-bold mb-3">Privacy Preserving</h3>
+                <p class="text-gray-300">
+                    Local processing ensures no biometric data storage while maintaining
+                    detection effectiveness and transparency.
+                </p>
+            </div>
+        </div>
+
+        <!-- Live Demo Section -->
+        <div class="bg-gray-800 bg-opacity-50 rounded-xl p-8 backdrop-blur-sm">
+            <h3 class="text-2xl font-bold mb-6 text-center">Live System Demonstration</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="text-center">
+                    <button id="startDemo" class="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 px-8 py-4 rounded-lg text-lg font-bold transition-all transform hover:scale-105">
+                        🚀 Start Live Demo
+                    </button>
+                    <p class="text-gray-400 mt-4">Experience real-time gaze tracking and behavioral analysis</p>
+                </div>
+                <div class="text-center">
+                    <button id="viewDashboard" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-8 py-4 rounded-lg text-lg font-bold transition-all transform hover:scale-105">
+                        📊 Instructor Dashboard
+                    </button>
+                    <p class="text-gray-400 mt-4">Monitor multiple students with comprehensive analytics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
