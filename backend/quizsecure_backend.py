@@ -54,7 +54,7 @@ except Exception as e:
     try:
         from ptgaze import demo
 
-        print("✅ Using ptgaze demo module instead")
+        print("✅ Using ptgaze mock demo module instead")
         gaze_estimator = None  # We'll handle this differently
     except Exception as e2:
         print(f"❌ Demo module also failed: {e2}")

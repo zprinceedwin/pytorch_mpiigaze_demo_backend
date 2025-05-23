@@ -177,6 +177,6 @@ def check_path_all(config: DictConfig) -> None:
     _check_path(config, 'gaze_estimator.camera_params')
     _check_path(config, 'gaze_estimator.normalized_camera_params')
     if config.demo.image_path:
-        _check_path(config, 'demo.image_path')
+        _check_path(config, 'mock demo.image_path')
     if config.demo.video_path:
-        _check_path(config, 'demo.video_path')
+        _check_path(config, 'mock demo.video_path')
